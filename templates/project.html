@@ -1,0 +1,113 @@
+
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+
+    <!-- Page Header Start -->
+    <section class="container-fluid position-relative overflow-hidden text-white d-flex align-items-center" style="height: 400px; background: linear-gradient(rgba(2, 48, 32, 0.7), rgba(2, 48, 32, 0.7)), url('{% static 'img/quote.jpg' %}') center center / cover no-repeat;">
+        <div class="container text-center position-relative" style="z-index: 10;">
+            <span class="text-primary fw-bold text-uppercase tracking-wider small d-block mb-3">OUR PORTFOLIO</span>
+            <h1 class="display-4 fw-bold mb-4 animated slideInDown text-white">Project Gallery</h1>
+            <p class="text-light fs-5 mx-auto animated slideInDown" style="max-width: 800px;">Experience the future of energy through our premium solar installations across the region.</p>
+        </div>
+    </section>
+    <!-- Page Header End -->
+
+
+    <!-- Projects Start -->
+    <div class="container-fluid py-5 bg-light" style="padding-top: 100px !important; padding-bottom: 100px !important;">
+        <div class="container">
+            <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 800px;">
+                <h6 class="text-primary text-uppercase fw-bold tracking-wider">Our Projects</h6>
+                <h1 class="display-5 fw-bold mb-4">Building A Sustainable Future With Solar Energy</h1>
+                <p class="text-muted fs-5">From commercial rooftops to large-scale industrial installations, our projects showcase the power of clean, reliable, and renewable energy solutions. Explore how RenewOne is helping businesses and industries reduce energy costs while contributing to a greener future.</p>
+            </div>
+            
+            <div class="row g-4 justify-content-center">
+                <!-- Project 1: Glenmark -->
+                <div class="col-12 col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="solatec-project-card">
+                        <img src="{% static 'img/Glenmark.jpg' %}" alt="Glenmark" class="solatec-project-img">
+                        <div class="solatec-overlay">
+                            <div class="solatec-content">
+                                <h3 class="solatec-title">Glenmark</h3>
+                                <div class="solatec-subtitle">Industrial Solar Project</div>
+                                <div class="solatec-location">
+                                    <i class="fa fa-map-marker-alt me-1"></i> Industrial Facility
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 2: Claro Energy -->
+                <div class="col-12 col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.2s">
+                    <div class="solatec-project-card">
+                        <img src="{% static 'img/Claro Energy.jpg' %}" alt="Claro Energy" class="solatec-project-img">
+                        <div class="solatec-overlay">
+                            <div class="solatec-content">
+                                <h3 class="solatec-title">Claro Energy</h3>
+                                <div class="solatec-subtitle">Residential Solar Solution</div>
+                                <div class="solatec-location">
+                                    <i class="fa fa-map-marker-alt me-1"></i> Residential Project
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 3: FITRight -->
+                <div class="col-12 col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="solatec-project-card">
+                        <img src="{% static 'img/FITRight.jpg' %}" alt="FITRight" class="solatec-project-img">
+                        <div class="solatec-overlay">
+                            <div class="solatec-content">
+                                <h3 class="solatec-title">FITRight</h3>
+                                <div class="solatec-subtitle">Commercial Solar Installation</div>
+                                <div class="solatec-location">
+                                    <i class="fa fa-map-marker-alt me-1"></i> Commercial Facility
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 4: Alivus Life Sciences -->
+                <div class="col-12 col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="solatec-project-card">
+                        <img src="{% static 'img/Alivus.jpg' %}" alt="Alivus Life Sciences" class="solatec-project-img">
+                        <div class="solatec-overlay">
+                            <div class="solatec-content">                              
+                                <h3 class="solatec-title">Alivus Life Sciences</h3>
+                                <div class="solatec-subtitle">CSR Solar Initiative</div>
+                                <div class="solatec-location">
+                                    <i class="fa fa-map-marker-alt me-1"></i> CSR Project
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 5: Hero -->
+                <div class="col-12 col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.2s">
+                    <div class="solatec-project-card">
+                        <img src="{% static 'img/Hero.jpg' %}" alt="Hero" class="solatec-project-img">
+                        <div class="solatec-overlay">
+                            <div class="solatec-content">                                
+                                <h3 class="solatec-title">Hero</h3>
+                                <div class="solatec-subtitle">Industrial Sustainability Project</div>
+                                <div class="solatec-location">
+                                    <i class="fa fa-map-marker-alt me-1"></i> Manufacturing Facility
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Projects End -->
+
+{% endblock %}

@@ -1,0 +1,320 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+    <!-- Hero Section Start -->
+    <section class="container-fluid bg-dark-green position-relative overflow-hidden text-white d-flex align-items-center" style="height: 500px; background: linear-gradient(rgba(2, 48, 32, 0.65), rgba(2, 48, 32, 0.35)), url('https://images.unsplash.com/photo-1509391366360-2e959784a276?auto=format&fit=crop&w=1600&q=80') center center no-repeat; background-size: cover;">
+        <div class="container position-relative" style="z-index: 10;">
+            <div class="row">
+                <div class="col-lg-8">
+                    <span class="text-primary fw-bold text-uppercase tracking-wider small d-block mb-3" style="text-shadow: 1px 1px 3px rgba(0,0,0,0.4);">ABOUT RENEWONE</span>
+                    <h1 class="display-4 fw-bold mb-4 animated slideInDown" style="color: #FFFFFF !important; text-shadow: 2px 2px 12px rgba(0,0,0,0.6);">
+                        Powering India’s Sustainable Future Through Solar Innovation
+                    </h1>
+                    <p class="text-light fs-5 mb-5 animated slideInDown" style="text-shadow: 1px 1px 5px rgba(0,0,0,0.4);">
+                        RenewOne is a trusted solar trading and renewable energy solutions company helping residential, commercial and industrial customers transition towards clean energy.
+                    </p>
+                    <div class="d-flex flex-wrap gap-3 animated slideInDown">
+                        <a href="{% url 'contact' %}" class="btn btn-outline-light rounded-pill py-3 px-5">
+                            Contact Us <i class="fas fa-arrow-right ms-2 small"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Hero Section End -->
+
+<!-- Our Story Section Start -->
+<section id="story" class="container section-py-80">
+    <div class="row g-5 align-items-center">
+        <!-- Image Column -->
+        <div class="col-lg-5 wow fadeIn" data-wow-delay="0.1s">
+            <img src="{% static 'img/ourstory.jpg' %}"
+                 alt="RenewOne Solar Solutions"
+                 class="img-fluid rounded-4 shadow-premium w-100"
+                 style="height: 550px; object-fit: cover;">
+        </div>
+
+        <!-- Content Column -->
+        <div class="col-lg-7 wow fadeIn" data-wow-delay="0.3s">
+            <span class="premium-subtitle d-block mb-3">OUR STORY</span>
+            <h2 class="display-5 fw-bold mb-4 text-dark">
+                Built On Purpose. Driven By Sustainability.
+            </h2>
+
+            <div class="text-muted fs-6">
+                <p class="mb-4 lh-lg wow fadeInUp" data-wow-delay="0.4s">
+                    RenewOne is a forward-looking solar trading and renewable energy solutions company established to support India's transition toward clean energy. We focus on delivering high-quality solar products for residential, commercial and industrial customers across India through trusted partnerships and strong distribution networks.
+                </p>
+
+                <p class="mb-4 lh-lg wow fadeInUp" data-wow-delay="0.5s">
+                    Founded by industry professionals with deep market insight and proven sales leadership, RenewOne combines industry expertise with reliable supply chain capabilities to provide customers with dependable solar solutions and exceptional service.
+                </p>
+
+                <p class="mb-4 lh-lg wow fadeInUp" data-wow-delay="0.6s">
+                    We specialize in the supply of bankable solar PV modules, inverters, BOS components and energy storage solutions. Through strong collaboration with EPC partners, we help deliver efficient and scalable renewable energy projects across the country.
+                </p>
+
+                <div class="bg-primary-soft p-4 rounded-4 border-start border-4 border-primary my-4 wow fadeInUp" data-wow-delay="0.7s">
+                    <p class="fw-medium fst-italic fs-5 mb-0 text-dark">
+                        "We are committed to accelerating India's clean energy future through reliability, transparency and sustainable innovation."
+                    </p>
+                </div>
+
+                <p class="mt-4 text-dark fw-medium lh-lg wow fadeInUp" data-wow-delay="0.8s">
+                    Built on transparency, speed and reliability, RenewOne continues to expand its presence across India while supporting emerging sectors such as EV charging and next-generation renewable energy solutions.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+    <!-- Our Story Section End -->
+
+
+    <!-- Why We Exist Section Start -->
+    <section class="container-fluid bg-light section-py-80">
+        <div class="container">
+            <div class="row g-5 align-items-center">
+                <div class="col-lg-6 order-2 order-lg-1 wow fadeIn" data-wow-delay="0.1s">
+                    <div class="bg-white p-5 rounded-4 shadow-sm h-100">
+                        <span class="premium-subtitle d-block mb-3">WHY WE EXIST</span>
+                        <h2 class="display-6 fw-bold mb-4 text-dark">A Cleaner Future Starts With A Strong Foundation</h2>
+                        <div class="text-muted fs-6 mt-4">
+                            <p class="mb-4 lh-lg">
+                                India's energy demand is growing rapidly, and with it, the need for cleaner, more reliable and responsible solutions. Traditional energy sources are no longer sustainable for our future.
+                            </p>
+                            <p class="mb-4 lh-lg">
+                                RenewOne exists to be a part of this transformation. It's more than just business for us — it's purpose: to build a greener India, reduce dependence on fossil fuels and create a better tomorrow.
+                            </p>
+                            <div class="bg-light p-4 rounded-3 mt-4">
+                                <p class="fw-bold text-dark mb-0 fs-5">
+                                    Renewable energy isn't just the right step; it's India's chance to lead a clean energy revolution.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 order-1 order-lg-2 wow fadeIn" data-wow-delay="0.3s">
+                      <img src="{% static 'img/why-we-exist.jpg' %}"
+                      alt="Wind and Solar Farms" class"
+                      class="img-fluid rounded-4 shadow-premium w-100" style="height: 520px; object-fit: cover;">                
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Why We Exist Section End -->
+
+
+    <!-- Vision & Mission Section Start -->
+    <section class="container section-py-80">
+        <div class="text-center mb-5 wow fadeInUp" data-wow-delay="0.1s">
+            <span class="premium-subtitle d-block mb-3">OUR VISION & MISSION</span>
+            <h2 class="display-6 fw-bold">Our Core Principles</h2>
+        </div>
+        <div class="row g-4">
+            <div class="col-md-6 col-lg-3 wow fadeInUp" data-wow-delay="0.1s">
+                <div class="bg-white p-5 rounded-4 shadow-sm border-0 h-100 text-center custom-hover">
+                    <div class="btn-square bg-primary-soft text-primary rounded-circle mx-auto mb-4" style="width: 80px; height: 80px;">
+                        <i class="far fa-eye fa-2x"></i>
+                    </div>
+                    <h4 class="fw-bold mb-3">Our Vision</h4>
+                    <p class="text-muted mb-0 lh-lg">To become India's leading and most trusted renewable energy partner, driving innovation and empowering businesses and communities.</p>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3 wow fadeInUp" data-wow-delay="0.2s">
+                <div class="bg-white p-5 rounded-4 shadow-sm border-0 h-100 text-center custom-hover">
+                    <div class="btn-square bg-primary-soft text-primary rounded-circle mx-auto mb-4" style="width: 80px; height: 80px;">
+                        <i class="fas fa-bullseye fa-2x"></i>
+                    </div>
+                    <h4 class="fw-bold mb-3">Our Mission</h4>
+                    <p class="text-muted mb-0 lh-lg">To deliver high-quality solar products and renewable energy solutions with integrity, innovation and commitment to a sustainable future.</p>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3 wow fadeInUp" data-wow-delay="0.3s">
+                <div class="bg-white p-5 rounded-4 shadow-sm border-0 h-100 text-center custom-hover">
+                    <div class="btn-square bg-primary-soft text-primary rounded-circle mx-auto mb-4" style="width: 80px; height: 80px;">
+                        <i class="fas fa-handshake fa-2x"></i>
+                    </div>
+                    <h4 class="fw-bold mb-3">Our Values</h4>
+                    <ul class="text-muted list-unstyled mb-0 lh-lg">
+                        <li class="mb-1">Transparency</li>
+                        <li class="mb-1">Reliability</li>
+                        <li class="mb-1">Integrity</li>
+                        <li class="mb-1">Sustainability</li>
+                        <li class="mb-0">Customer First</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3 wow fadeInUp" data-wow-delay="0.4s">
+                <div class="bg-white p-5 rounded-4 shadow-sm border-0 h-100 text-center custom-hover">
+                    <div class="btn-square bg-primary-soft text-primary rounded-circle mx-auto mb-4" style="width: 80px; height: 80px;">
+                        <i class="fas fa-users fa-2x"></i>
+                    </div>
+                    <h4 class="fw-bold mb-3">Our Commitment</h4>
+                    <p class="text-muted mb-0 lh-lg">Sustainability is at the heart of everything we do – from products to partnerships and community impact.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Vision & Mission Section End -->
+
+
+    <!-- Why Choose RenewOne Section Start -->
+    <section class="container-fluid bg-light section-py-80">
+        <div class="container">
+        <div class="text-center mb-5 wow fadeInUp" data-wow-delay="0.1s">
+                <span class="premium-subtitle d-block mb-3">WHY CHOOSE US</span>
+            <h2 class="display-6 fw-bold">Why Choose RenewOne</h2>
+        </div>
+        <div class="row g-4">
+            <div class="col-md-6 col-lg-3 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="bg-white p-5 rounded-4 shadow-sm border-0 h-100 text-center custom-hover">
+                        <div class="btn-square bg-primary text-white rounded-circle mx-auto mb-4 shadow" style="width: 80px; height: 80px;">
+                            <i class="fas fa-award fa-2x"></i>
+                    </div>
+                        <h4 class="fw-bold mb-3">Quality Control</h4>
+                        <p class="text-muted mb-0 lh-lg">Rigorous quality checks for all components ensuring long-term reliability.</p>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3 wow fadeInUp" data-wow-delay="0.2s">
+                    <div class="bg-white p-5 rounded-4 shadow-sm border-0 h-100 text-center custom-hover">
+                        <div class="btn-square bg-primary text-white rounded-circle mx-auto mb-4 shadow" style="width: 80px; height: 80px;">
+                            <i class="fas fa-tools fa-2x"></i>
+                    </div>
+                        <h4 class="fw-bold mb-3">Expert Engineering</h4>
+                        <p class="text-muted mb-0 lh-lg">Customized solutions designed by experienced solar engineers.</p>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="bg-white p-5 rounded-4 shadow-sm border-0 h-100 text-center custom-hover">
+                        <div class="btn-square bg-primary text-white rounded-circle mx-auto mb-4 shadow" style="width: 80px; height: 80px;">
+                            <i class="fas fa-search-dollar fa-2x"></i>
+                    </div>
+                        <h4 class="fw-bold mb-3">Complete Transparency</h4>
+                        <p class="text-muted mb-0 lh-lg">Clear communication and honest pricing with no hidden costs.</p>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3 wow fadeInUp" data-wow-delay="0.4s">
+                    <div class="bg-white p-5 rounded-4 shadow-sm border-0 h-100 text-center custom-hover">
+                        <div class="btn-square bg-primary text-white rounded-circle mx-auto mb-4 shadow" style="width: 80px; height: 80px;">
+                            <i class="fas fa-users-cog fa-2x"></i>
+                    </div>
+                        <h4 class="fw-bold mb-3">Skilled Team</h4>
+                        <p class="text-muted mb-0 lh-lg">Dedicated professionals committed to excellence in service and support.</p>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+    <!-- Why Choose RenewOne Section End -->
+
+
+    <!-- Sustainability Impact Start -->
+    <section class="container-fluid bg-white section-py-80 border-top border-bottom">
+        <div class="container py-5">
+            <div class="text-center mb-5 wow fadeInUp" data-wow-delay="0.1s">
+                <span class="premium-subtitle d-block mb-3">OUR COMMITMENT</span>
+                <h2 class="display-6 fw-bold">Sustainability Impact</h2>
+                <p class="text-muted fs-5 mt-3 max-w-700 mx-auto">We are committed to driving a cleaner, greener tomorrow with responsible products and sustainable energy solutions.</p>
+            </div>
+            <div class="row g-4 justify-content-center mt-4">
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="bg-light p-5 rounded-4 text-center h-100 custom-hover">
+                        <i class="fas fa-seedling text-primary fa-3x mb-4"></i>
+                        <h4 class="fw-bold mb-0">Clean Energy Transition</h4>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="bg-light p-5 rounded-4 text-center h-100 custom-hover">
+                        <i class="fas fa-cloud-sun text-primary fa-3x mb-4"></i>
+                        <h4 class="fw-bold mb-0">Carbon Reduction</h4>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="bg-light p-5 rounded-4 text-center h-100 custom-hover">
+                        <i class="fas fa-shield-alt text-primary fa-3x mb-4"></i>
+                        <h4 class="fw-bold mb-0">ESG Support</h4>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
+                    <div class="bg-light p-5 rounded-4 text-center h-100 custom-hover">
+                        <i class="fas fa-globe text-primary fa-3x mb-4"></i>
+                        <h4 class="fw-bold mb-0">Net Zero Goals</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Sustainability Impact End -->
+
+    <!-- Services & Solutions Section Start -->
+    <section class="container-fluid bg-light section-py-80">
+        <div class="container">
+            <div class="text-center mb-5 wow fadeInUp" data-wow-delay="0.1s">
+                <span class="premium-subtitle d-block mb-3">WHAT WE DO</span>
+                <h2 class="display-6 fw-bold">Services & Solutions Overview</h2>
+            </div>
+            <div class="row g-4 mt-4">
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="bg-white p-5 rounded-4 shadow-sm border-0 h-100 text-center custom-hover">
+                        <div class="btn-square bg-primary-soft text-primary rounded-circle mx-auto mb-4" style="width: 70px; height: 70px;">
+                            <i class="fas fa-home fa-2x"></i>
+                        </div>
+                        <h5 class="fw-bold mb-0">Residential Rooftop Solar</h5>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.2s">
+                    <div class="bg-white p-5 rounded-4 shadow-sm border-0 h-100 text-center custom-hover">
+                        <div class="btn-square bg-primary-soft text-primary rounded-circle mx-auto mb-4" style="width: 70px; height: 70px;">
+                            <i class="fas fa-industry fa-2x"></i>
+                        </div>
+                        <h5 class="fw-bold mb-0">Commercial & Industrial EPC</h5>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="bg-white p-5 rounded-4 shadow-sm border-0 h-100 text-center custom-hover">
+                        <div class="btn-square bg-primary-soft text-primary rounded-circle mx-auto mb-4" style="width: 70px; height: 70px;">
+                            <i class="fas fa-solar-panel fa-2x"></i>
+                        </div>
+                        <h5 class="fw-bold mb-0">Utility Scale Solar Projects</h5>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.4s">
+                    <div class="bg-white p-5 rounded-4 shadow-sm border-0 h-100 text-center custom-hover">
+                        <div class="btn-square bg-primary-soft text-primary rounded-circle mx-auto mb-4" style="width: 70px; height: 70px;">
+                            <i class="fas fa-box-open fa-2x"></i>
+                        </div>
+                        <h5 class="fw-bold mb-0">Solar Trading & Procurement</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Services & Solutions Section End -->
+
+
+    <!-- Looking Ahead Section Start -->
+    <section class="container section-py-80">
+        <div class="row g-5 align-items-center">
+            <div class="col-lg-5 wow fadeIn" data-wow-delay="0.1s">
+                <span class="premium-subtitle d-block mb-3">LOOKING AHEAD</span>
+                <h2 class="display-6 fw-bold mb-4">Building The Future Of Renewable Energy</h2>
+                <p class="text-muted fs-6 mb-5 lh-lg">We are investing in innovation, strengthening our partnerships and expanding our presence to support India's clean energy goals.</p>
+                <ul class="list-unstyled mb-0 fs-5 text-dark fw-medium">
+                    <li class="mb-4 d-flex align-items-center"><div class="btn-square bg-primary-soft text-primary rounded-circle me-3" style="width: 40px; height: 40px;"><i class="fas fa-check"></i></div> Pan India Expansion</li>
+                    <li class="mb-4 d-flex align-items-center"><div class="btn-square bg-primary-soft text-primary rounded-circle me-3" style="width: 40px; height: 40px;"><i class="fas fa-check"></i></div> EPC Partnerships</li>
+                    <li class="mb-4 d-flex align-items-center"><div class="btn-square bg-primary-soft text-primary rounded-circle me-3" style="width: 40px; height: 40px;"><i class="fas fa-check"></i></div> EV Infrastructure Growth</li>
+                    <li class="mb-4 d-flex align-items-center"><div class="btn-square bg-primary-soft text-primary rounded-circle me-3" style="width: 40px; height: 40px;"><i class="fas fa-check"></i></div> Energy Storage Solutions</li>
+                    <li class="d-flex align-items-center"><div class="btn-square bg-primary-soft text-primary rounded-circle me-3" style="width: 40px; height: 40px;"><i class="fas fa-check"></i></div> Sustainable Innovation</li>
+                </ul>
+            </div>
+            <div class="col-lg-7 wow fadeIn" data-wow-delay="0.3s">
+                <img src="https://images.unsplash.com/photo-1508514177221-188b1cf16e9d?auto=format&fit=crop&w=800&q=80" alt="Solar Farm Horizon" class="img-fluid rounded-4 shadow-premium w-100" style="height: 500px; object-fit: cover;">
+            </div>
+        </div>
+    </section>
+    <!-- Looking Ahead Section End -->
+
+{% endblock %}

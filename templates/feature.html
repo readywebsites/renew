@@ -1,0 +1,242 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+    <!-- Section 1: Hero Section Start -->
+    <section class="container-fluid position-relative overflow-hidden text-white d-flex align-items-center" style="height: 500px; background: linear-gradient(rgba(2, 48, 32, 0.7), rgba(2, 48, 32, 0.7)), url('img/solar-banner.jpg') center center / cover no-repeat;">
+        <div class="container text-center position-relative" style="z-index: 10;">
+            <span class="text-primary fw-bold text-uppercase tracking-wider small d-block mb-3 animated slideInDown">WHY RENEWONE</span>
+            <h1 class="display-3 fw-bold mb-4 animated slideInDown text-white">Trusted Renewable Energy Partner</h1>
+            <p class="text-light fs-5 mx-auto animated slideInDown mb-5" style="max-width: 800px; line-height: 1.8;">Delivering high-quality solar products, EPC solutions and renewable energy services across residential, commercial and industrial sectors.</p>
+            <div class="d-flex justify-content-center gap-3 flex-wrap animated slideInDown">
+                <a href="{% url 'contact' %}" class="btn btn-primary rounded-pill py-3 px-5 fw-bold shadow">Get Free Consultation</a>
+                <a href="{% url 'projects' %}" class="btn btn-outline-light rounded-pill py-3 px-5 fw-bold shadow">View Projects</a>
+            </div>
+        </div>
+    </section>
+    <!-- Section 1: Hero Section End -->
+
+    <!-- Section 2: Why Clients Trust RenewOne Start -->
+    <section class="container-fluid bg-light section-py-80">
+        <div class="container">
+            <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 800px;">
+                <h6 class="premium-subtitle">Why Clients Trust RenewOne</h6>
+                <h2 class="premium-title">Why Industry Leaders Choose RenewOne</h2>
+                <p class="text-muted fs-5 mt-3">We combine technical expertise, quality products and long-term support to deliver reliable renewable energy solutions.</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="premium-value-card">
+                        <div class="premium-value-icon"><i class="fa fa-clipboard-check"></i></div>
+                        <h4 class="premium-value-title">Rigorous Quality Control</h4>
+                        <p class="premium-value-text mb-0">Strict quality checks and reliable sourcing standards.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.2s">
+                    <div class="premium-value-card">
+                        <div class="premium-value-icon"><i class="fa fa-award"></i></div>
+                        <h4 class="premium-value-title">Superior Product & Service Quality</h4>
+                        <p class="premium-value-text mb-0">Industry-leading products with dependable execution.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="premium-value-card">
+                        <div class="premium-value-icon"><i class="fa fa-handshake"></i></div>
+                        <h4 class="premium-value-title">Complete Transparency & Integrity</h4>
+                        <p class="premium-value-text mb-0">Clear communication and honest project management.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.4s">
+                    <div class="premium-value-card">
+                        <div class="premium-value-icon"><i class="fa fa-industry"></i></div>
+                        <h4 class="premium-value-title">Industry Expertise</h4>
+                        <p class="premium-value-text mb-0">Experienced team with deep solar sector knowledge.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="premium-value-card">
+                        <div class="premium-value-icon"><i class="fa fa-users-cog"></i></div>
+                        <h4 class="premium-value-title">Passionate & Skilled Team</h4>
+                        <p class="premium-value-text mb-0">Dedicated professionals focused on client success.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.6s">
+                    <div class="premium-value-card">
+                        <div class="premium-value-icon"><i class="fa fa-headset"></i></div>
+                        <h4 class="premium-value-title">Comprehensive Post-Delivery Support</h4>
+                        <p class="premium-value-text mb-0">Strong after-sales service and maintenance assistance.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Section 2: Why Clients Trust RenewOne End -->
+
+    <!-- Section 3: Our Core Capabilities Start -->
+    <section class="container-fluid bg-white section-py-80">
+        <div class="container">
+            <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 800px;">
+                <h6 class="premium-subtitle">Our Core Capabilities</h6>
+                <h2 class="premium-title">Dedicated Solutions Across Key Solar Sectors</h2>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="project-info-card h-100 bg-light border-0">
+                        <h3 class="fw-bold text-dark mb-4 border-start border-4 border-primary ps-3">Commercial & Industrial Solar EPC</h3>
+                        <ul class="list-unstyled text-muted fs-5 premium-list mb-0">
+                            <li><i class="fa fa-check-circle"></i> End-to-End Project Lifecycle</li>
+                            <li><i class="fa fa-check-circle"></i> Custom C&I Designs</li>
+                            <li><i class="fa fa-check-circle"></i> Procurement & Construction</li>
+                            <li><i class="fa fa-check-circle"></i> Performance Guarantees</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.2s">
+                    <div class="project-info-card h-100 bg-light border-0">
+                        <h3 class="fw-bold text-dark mb-4 border-start border-4 border-primary ps-3">Utility Scale Solar Projects</h3>
+                        <ul class="list-unstyled text-muted fs-5 premium-list mb-0">
+                            <li><i class="fa fa-check-circle"></i> Multi-MW Solar Plants</li>
+                            <li><i class="fa fa-check-circle"></i> Land Assessment</li>
+                            <li><i class="fa fa-check-circle"></i> Project Management</li>
+                            <li><i class="fa fa-check-circle"></i> Grid Integration</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="project-info-card h-100 bg-light border-0">
+                        <h3 class="fw-bold text-dark mb-4 border-start border-4 border-primary ps-3">Industrial Facilitation</h3>
+                        <ul class="list-unstyled text-muted fs-5 premium-list mb-0">
+                            <li><i class="fa fa-check-circle"></i> Technical Feasibility Studies</li>
+                            <li><i class="fa fa-check-circle"></i> Financial Analysis</li>
+                            <li><i class="fa fa-check-circle"></i> Regulatory Assistance</li>
+                            <li><i class="fa fa-check-circle"></i> Turnkey Execution</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.4s">
+                    <div class="project-info-card h-100 bg-light border-0">
+                        <h3 class="fw-bold text-dark mb-4 border-start border-4 border-primary ps-3">Large Commercial Establishments</h3>
+                        <ul class="list-unstyled text-muted fs-5 premium-list mb-0">
+                            <li><i class="fa fa-check-circle"></i> Multi-Site Solutions</li>
+                            <li><i class="fa fa-check-circle"></i> Corporate Sustainability Goals</li>
+                            <li><i class="fa fa-check-circle"></i> Energy Cost Optimization</li>
+                            <li><i class="fa fa-check-circle"></i> Long-Term ROI</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Section 3: Our Core Capabilities End -->
+
+    <!-- Section 4: Our Sustainability Impact Start -->
+    <section class="container-fluid bg-dark-green text-white section-py-80">
+        <div class="container">
+            <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 800px;">
+                <h6 class="text-primary text-uppercase fw-bold mb-3" style="letter-spacing: 3px;">Our Sustainability Impact</h6>
+                <h2 class="text-white fw-bold mb-4">Driving A Greener Future</h2>
+            </div>
+            <div class="row g-4 justify-content-center">
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="bg-dark-green-light p-4 rounded-4 text-center custom-hover h-100 border border-secondary border-opacity-25">
+                        <i class="fa fa-cloud-meatball fa-3x text-primary mb-3"></i>
+                        <h2 class="text-white fw-bold mb-2"><span data-toggle="counter-up">1500</span>+</h2>
+                        <h5 class="text-primary mb-3">Tons CO₂ Offset</h5>
+                        <p class="text-light mb-0 small">Every 1 MW solar plant can offset approximately 1200–1500 tons of CO₂ annually.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.2s">
+                    <div class="bg-dark-green-light p-4 rounded-4 text-center custom-hover h-100 border border-secondary border-opacity-25">
+                        <i class="fa fa-globe fa-3x text-primary mb-3"></i>
+                        <h2 class="text-white fw-bold mb-2"><span data-toggle="counter-up">100</span>%</h2>
+                        <h5 class="text-primary mb-3">ESG Goals Support</h5>
+                        <p class="text-light mb-0 small">Helping organizations meet environmental and sustainability commitments.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="bg-dark-green-light p-4 rounded-4 text-center custom-hover h-100 border border-secondary border-opacity-25">
+                        <i class="fa fa-gas-pump fa-3x text-primary mb-3"></i>
+                        <h2 class="text-white fw-bold mb-2"><span data-toggle="counter-up">100</span>%</h2>
+                        <h5 class="text-primary mb-3">Clean Energy Transition</h5>
+                        <p class="text-light mb-0 small">Reducing dependency on conventional and non-renewable energy sources.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.4s">
+                    <div class="bg-dark-green-light p-4 rounded-4 text-center custom-hover h-100 border border-secondary border-opacity-25">
+                        <i class="fa fa-seedling fa-3x text-primary mb-3"></i>
+                        <h2 class="text-white fw-bold mb-2">Year <span data-toggle="counter-up">2070</span></h2>
+                        <h5 class="text-primary mb-3">Net Zero Vision</h5>
+                        <p class="text-light mb-0 small">Supporting India's renewable energy and Net Zero 2070 targets.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Section 4: Our Sustainability Impact End -->
+
+    <!-- Section 5: Trusted By Industry Leaders Start -->
+    <section class="container-fluid bg-light section-py-80">
+        <div class="container">
+            <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+                <h6 class="premium-subtitle">Trusted Clients</h6>
+                <h2 class="premium-title mb-3">Trusted By Leading Organizations</h2>
+            </div>
+            <div class="row g-3 justify-content-center wow fadeInUp" data-wow-delay="0.3s">
+                <div class="col-lg-2 col-md-4 col-6">
+                    <div class="client-card shadow-sm h-100 d-flex align-items-center justify-content-center py-4 fs-5 client-logo-grayscale">Honeywell</div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-6">
+                    <div class="client-card shadow-sm h-100 d-flex align-items-center justify-content-center py-4 fs-5 client-logo-grayscale">Glenmark</div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-6">
+                    <div class="client-card shadow-sm h-100 d-flex align-items-center justify-content-center py-4 fs-5 client-logo-grayscale">Claro Energy</div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-6">
+                    <div class="client-card shadow-sm h-100 d-flex align-items-center justify-content-center py-4 fs-5 client-logo-grayscale">FITRight</div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-6">
+                    <div class="client-card shadow-sm h-100 d-flex align-items-center justify-content-center py-4 fs-5 client-logo-grayscale">Alivus Life Sciences</div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-6">
+                    <div class="client-card shadow-sm h-100 d-flex align-items-center justify-content-center py-4 fs-5 client-logo-grayscale">Hero</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Section 5: Trusted By Industry Leaders End -->
+
+    <!-- Section 6: Why Our Approach Works Start -->
+    <section class="container-fluid bg-white section-py-80 border-bottom">
+        <div class="container">
+            <div class="row g-5 align-items-center">
+                <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
+                    <img src="{% static 'img/about.jpg' %}" class="img-fluid rounded-4 shadow-premium w-100" style="object-fit: cover; max-height: 500px;" alt="Solar Project Planning">
+                </div>
+                <div class="col-lg-6 wow fadeIn" data-wow-delay="0.3s">
+                    <h6 class="premium-subtitle">Why Our Approach Works</h6>
+                    <h2 class="display-6 fw-bold mb-4 text-dark">What Makes RenewOne Different?</h2>
+                    <div class="row g-3">
+                        <div class="col-sm-6">
+                            <ul class="list-unstyled text-muted fs-6 premium-list mb-0">
+                                <li><i class="fa fa-check-circle"></i> Quality First Approach</li>
+                                <li><i class="fa fa-check-circle"></i> Reliable Supply Network</li>
+                                <li><i class="fa fa-check-circle"></i> End-To-End Execution</li>
+                                <li><i class="fa fa-check-circle"></i> Fast Project Delivery</li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-6">
+                            <ul class="list-unstyled text-muted fs-6 premium-list mb-0">
+                                <li><i class="fa fa-check-circle"></i> Strong Industry Partnerships</li>
+                                <li><i class="fa fa-check-circle"></i> Long-Term Customer Support</li>
+                                <li><i class="fa fa-check-circle"></i> Sustainability Focus</li>
+                                <li><i class="fa fa-check-circle"></i> Transparent Communication</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Section 6: Why Our Approach Works End -->
+         {% endblock %}
